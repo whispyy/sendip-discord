@@ -26,6 +26,16 @@ At C:\Scripts\sendip_discord.ps1:18 char:1
 
 ## Run a PowerShell script on Windows startup
 
+### Using the startup folder
+
+1. Navigate to your startup folder 
+    - https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd#:~:text=With%20the%20file%20location%20open,This%20opens%20the%20Startup%20folder.
+    - `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup.`
+2. In it, create a `<scriptName>.cmd` file
+3. `powerShell C:\<path>\script.ps1 >> C:\<path>\script.log`
+
+### Using a service
+
 1. Open the Start menu and type "powershell". Right-click on "Windows PowerShell" and select "Run as administrator".
 
 2. In the PowerShell window, navigate to the location of the script you want to run on startup. For example, if the script is stored in the C:\Scripts folder, you can use the following command:
